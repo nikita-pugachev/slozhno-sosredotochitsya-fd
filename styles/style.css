@@ -2,4 +2,229 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: var(--bg-color);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  position: relative;
+  padding: 10px;
+}
+
+.header__theme-menu {
+  margin-block-start: 65px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  background-color: var(--header-button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  min-width: 70px;
+  height: 26px;
+  text-transform: lowercase;
+  font-family: var(--font-settings);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.header__theme-menu-button:disabled {
+  border: 1px solid var(--border-button);
+}
+
+.title {
+  margin-block-start: 55px;
+  margin-block-end: 55px;
+  font-family: var(--font-settings);
+  font-weight: 700;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 83%;
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header-text {
+  font-family: var(--font-settings);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  margin-block-end: 55px;
+}
+
+.title-decor {
+  background-color: var(--subtitle-bg-color);
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-block-start: 1px solid var(--border-button);
+  border-inline-end: 1px solid var(--border-button);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-block-end: 1px solid var(--border-button);
+  border-inline-start: 1px solid var(--border-button);
+}
+
+.decor {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-family: var(--font-settings);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.decor::after {
+  content: "";
+  align-self: center;
+  display: block;
+  width: 9px;
+  height: 9px;
+  box-shadow: 0px 0px 4px 2px #FF0070;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.main {
+  padding: 10px;
+  display: grid;
+  gap: 50px;
+  margin-block-end: 30px;
+}
+
+.subtitle {
+  font-family: var(--font-settings);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--subtitle-title-color);
+  margin-block-end: 20px;
+}
+
+.main-title {
+  margin-block-start: 30px;
+}
+
+.title-section {
+  font-family: var(--font-settings);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--section-text-color);
+}
+
+.text {
+  padding-top: 10px;
+  font-family: var(--font-settings);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--text-color);
+}
+
+.link {
+  text-shadow: 2px 1px 0 var(--accent-color);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recommendation-title {
+  font-family: var(--font-settings);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--section-text-color);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gallery-title {
+  margin-block-end: 9px;
+}
+
+.galerry-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  min-height: 668px;
+  text-align: center;
+}
+
+.footer::before {
+  content: "";
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-block-start: 1px solid var(--border-button);
+  border-inline-end: 1px solid var(--border-button);
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-block-end: 1px solid var(--border-button);
+  border-inline-start: 1px solid var(--border-button);
+}
+
+.footer-text {
+  font-family: var(--font-settings);
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 83%;
+  letter-spacing: 0%;
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
