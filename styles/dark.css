@@ -13,4 +13,71 @@
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  --bg-color: url(../images/cover-image-dark.png);
+  --subtitle-bg-color: #FF0070;
+  --header-button-bg-color: transparent;
+  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --section-title-color: #000028;
+  --subtitle-color: #FF0070;
+  --button-text-color: #FF0070;
+  --font-setting: "IBM Plex Mono", sans-serif;
+  --accent-color: #FF0070;
+  --border-button: #FF0070;
+  --padding: 10px;
+}
+
+.theme-dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
+  cursor: pointer;
+}
+
+.theme-dark .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid rgb(255, 0, 112);
+  outline: none;
+}
+
+.theme-dark .link:hover {
+  border-bottom: 1px solid rgb(241, 178, 206);
+  cursor: pointer;
+}
+
+.theme-dark .link:focus{
+  border: 1px solid rgb(241, 178, 206);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: url(../images/cover-image-dark.png);
+    --subtitle-bg-color: #FF0070;
+    --header-button-bg-color: transparent;
+    --title-color: #DB00FF;
+    --text-color: #F1B2CE;
+    --section-title-color: #000028;
+    --subtitle-color: #FF0070;
+    --button-text-color: #FF0070;
+    --font-setting: "IBM Plex Mono", sans-serif;
+    --accent-color: #FF0070;
+    --border-button: #FF0070;
+    --padding: 10px;
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
+    cursor: pointer;
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid rgb(255, 0, 112);
+    outline: none;
+  }
+
+  .link:hover {
+    border-bottom: 1px solid rgb(241, 178, 206);
+    cursor: pointer;
+  }
+
+  .link:focus {
+    border: 1px solid rgb(241, 178, 206);
+  }
 }

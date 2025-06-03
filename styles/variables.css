@@ -8,10 +8,11 @@
   --header-button-bg-color: transparent;
   --title-color: #DB00FF;
   --text-color: #F1B2CE;
-  --section-text-color: #000028;
-  --subtitle-title-color: #FF0070;
+  --section-title-color: #000028;
+  --subtitle-color: #FF0070;
   --button-text-color: #FF0070;
+  --font-setting: "IBM Plex Mono", sans-serif;
   --accent-color: #FF0070;
-  --font-settings: 'IBM Plex Mono', sans-serif;
   --border-button: #FF0070;
+  --padding: 10px;
 }

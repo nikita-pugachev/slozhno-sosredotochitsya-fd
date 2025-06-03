@@ -11,6 +11,86 @@
   */
 }
 
+
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  --bg-color: url(../images/cover-image-light.png);
+  --subtitle-bg-color: #FF8DCB;
+  --header-button-bg-color: transparent;
+  --title-color: #FFC2E6;
+  --text-color: #353430;
+  --section-title-color: #353430;
+  --subtitle-color: #353430;
+  --button-text-color: #353430;
+  --font-setting: "IBM Plex Mono", sans-serif;
+  --accent-color: #FF8DCB;
+  --border-button: #353430;
+  --padding: 10px;
+}
+
+.theme-light .decor {
+  display: none;
+}
+
+.theme-light .header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.4);
+  cursor: pointer;
+}
+
+.theme-light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid rgb(53, 52, 48);
+  outline: none;
+}
+
+.theme-light .link:hover {
+  border-bottom: 1px solid rgb(53, 52, 48);
+  cursor: pointer;
+}
+
+.theme-light .link:focus {
+  border: 1px solid rgb(53, 52, 48);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: url(../images/cover-image-light.png);
+    --subtitle-bg-color: #FF8DCB;
+    --header-button-bg-color: transparent;
+    --title-color: #FFC2E6;
+    --text-color: #353430;
+    --section-title-color: #353430;
+    --subtitle-color: #353430;
+    --button-text-color: #353430;
+    --font-setting: "IBM Plex Mono", sans-serif;
+    --accent-color: #FF8DCB;
+    --border-button: #353430;
+    --padding: 10px;
+  }
+  
+  .decor {
+    display: none;
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.4);
+    cursor: pointer;
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid rgb(53, 52, 48);
+    outline: none;
+  }
+
+  .link:hover {
+    border-bottom: 1px solid rgb(53, 52, 48);
+    cursor: pointer;
+  }
+
+  .link:focus {
+    border: 1px solid rgb(53, 52, 48);
+  }
+
+  .link:focus {
+    border: 1px solid rgb(53, 52, 48);
+  }
 }
