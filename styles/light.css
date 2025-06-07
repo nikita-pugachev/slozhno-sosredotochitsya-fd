@@ -92,7 +92,7 @@
     outline: none;
   }
 
-  .link:focus {
+  .link:focus-visible {
     border: 1px solid rgb(53, 52, 48);
   }
 }
