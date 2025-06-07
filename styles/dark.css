@@ -42,6 +42,11 @@
 }
 
 .theme-dark .link:focus {
+  outline: none;
+  border: 1px solid rgb(241, 178, 206);
+}
+
+.theme-dark .link:focus-visible {
   border: 1px solid rgb(241, 178, 206);
 }
 
@@ -76,6 +81,10 @@
   }
 
   .link:focus {
+    outline: none;
+  }
+
+  .link:focus-visible {
     border: 1px solid rgb(241, 178, 206);
   }
 }

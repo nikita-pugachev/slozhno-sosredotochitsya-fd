@@ -13,6 +13,7 @@
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
   padding: var(--padding);
+  min-height: 668px;
   height: 100vh;
   align-items: center;
 }
@@ -195,6 +196,7 @@
 .footer {
   display: grid;
   position: relative;
+  min-height: 668px;
   height: 100vh;
   align-items: center;
   text-align: center;
