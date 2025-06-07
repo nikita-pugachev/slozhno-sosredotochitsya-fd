@@ -24,7 +24,6 @@
   --font-setting: "IBM Plex Mono", sans-serif;
   --accent-color: #FF0070;
   --border-button: #FF0070;
-  --padding: 10px;
 }
 
 .theme-dark .header__theme-menu-button:hover {
@@ -59,7 +58,6 @@
     --font-setting: "IBM Plex Mono", sans-serif;
     --accent-color: #FF0070;
     --border-button: #FF0070;
-    --padding: 10px;
   }
 
   .header__theme-menu-button:hover {
