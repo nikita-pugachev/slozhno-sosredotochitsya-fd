@@ -13,11 +13,12 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/icon.svg" type="image/svg+xml" />
   </head>
   <body class="page">
     <header class="header decorated-zone">
-      <div class="decor" aria-hidden="true">REC</div>
+      <span class="decor" aria-hidden="true">REC</span>
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -45,10 +46,13 @@
         </ul>
       </nav>
       <h1 class="title">no focus</h1>
-      <p class="header-text title-decor">
-        Что делать, когда не можешь делать ничего<br />
-        Или почему нам так сложно сконцентрироваться, особенно когда очень надо
-      </p>
+      <article class="title-decor header-info">
+        <p class="header-text">Что делать, когда не можешь делать ничего</p>
+        <p class="header-text">
+          Или почему нам так сложно сконцентрироваться, особенно когда очень
+          надо
+        </p>
+      </article>
     </header>
     <main class="content">
       <section class="introduction section">
@@ -61,11 +65,16 @@
               важные. Где же легендарная многозадачность, когда она так нужна
               вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
               её просто не существует. Исследователи
-              <a class="link">выяснили</a>, что мозгу тяжело концентрироваться
-              даже на двух делах одновременно. А когда в поле внимания попадает
-              несколько важных задач, организм паникует и выделяет кортизол и
-              адреналин — «гормоны стресса». Из-за этого мы работаем
-              невнимательно: ошибаемся и быстро устаём.
+              <a
+                href="https://dana.org/news-and-insights/"
+                target="_blank"
+                class="link"
+                >выяснили</a
+              >, что мозгу тяжело концентрироваться даже на двух делах
+              одновременно. А когда в поле внимания попадает несколько важных
+              задач, организм паникует и выделяет кортизол и адреналин —
+              «гормоны стресса». Из-за этого мы работаем невнимательно:
+              ошибаемся и быстро устаём.
             </p>
           </li>
           <li class="list-items">
@@ -127,16 +136,14 @@
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
+        <h3 class="title-decor advice_title">
+          5 простых (на самом деле не очень) советов
+        </h3>
         <ul class="list">
           <li class="list-items">
-            <h3 class="title-decor list-item-title">
-              5 простых (на самом деле не очень) советов
-            </h3>
-          </li>
-          <li class="list-items">
-            <h3 class="title-decor recommendation-title">
+            <h4 class="title-decor recommendation-title">
               Представьте небо и облака
-            </h3>
+            </h4>
             <p class="text">
               Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
               успокоиться. Ведь часто именно тревожные мысли о сложных задачах
@@ -149,7 +156,7 @@
             </p>
           </li>
           <li class="list-items">
-            <h3 class="title-decor recommendation-title">Включите музыку</h3>
+            <h4 class="title-decor recommendation-title">Включите музыку</h4>
             <p class="text">
               Но не любую, и не любимую. Любимая может быть связана с сильными
               положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -158,15 +165,19 @@
             </p>
           </li>
           <li class="list-items">
-            <h3 class="title-decor recommendation-title">Прогуляйтесь</h3>
+            <h4 class="title-decor recommendation-title">Прогуляйтесь</h4>
             <p class="text">
               Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
-              <a class="link">показал</a>, что созерцание природы повышает
-              концентрацию, в то время как после просмотра городских пейзажей
-              она наоборот понижается. Можно совместить прогулку с физическими
-              упражнениями или бегом — так в мозг поступит ещё больше кислорода
-              и он будет лучше работать. Но и простая двадцатиминутная прогулка
-              — тоже отличный вариант.
+              <a
+                href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
+                target="_blank"
+                class="link"
+                >показал</a
+              >, что созерцание природы повышает концентрацию, в то время как
+              после просмотра городских пейзажей она наоборот понижается. Можно
+              совместить прогулку с физическими упражнениями или бегом — так в
+              мозг поступит ещё больше кислорода и он будет лучше работать. Но и
+              простая двадцатиминутная прогулка — тоже отличный вариант.
             </p>
           </li>
           <li class="list-items">
@@ -223,7 +234,7 @@
         />
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer decorated-zone">
       <h2 class="footer-title">focus</h2>
     </footer>
   </body>

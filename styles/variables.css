@@ -11,8 +11,15 @@
   --section-title-color: #000028;
   --subtitle-color: #FF0070;
   --button-text-color: #FF0070;
-  --font-setting: "IBM Plex Mono", sans-serif;
+  --font-setting: 'IBM Plex Mono', sans-serif;
   --accent-color: #FF0070;
-  --border-button: #FF0070;
+  --border: #FF0070;
+  --border-hover-button: rgba(255, 0, 112, 0.4);
   --padding: 10px;
+}
+
+@media (width >=768px) {
+  :root {
+    --padding: 20px;
+  }
 }

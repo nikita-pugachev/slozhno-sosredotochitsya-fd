@@ -34,9 +34,9 @@
   color: var(--button-text-color);
   border: none;
   min-width: 70px;
-  height: 26px;
+  min-height: 26px;
   text-transform: lowercase;
-  font-family: var(--font-setting);
+  font-family: var(--font-setting, sans-serif);
   font-weight: 400;
   font-size: 18px;
   line-height: 18px;
@@ -44,7 +44,7 @@
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--border-button);
+  border: 1px solid var(--border);
   pointer-events: none;
 }
 
@@ -58,11 +58,14 @@
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
+.header-info {
+  margin-block-end: 55px;
+}
+
 .header-text {
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  margin-block-end: 55px;
   color: var(--section-title-color);
 }
 
@@ -77,8 +80,8 @@
   right: 10px;
   width: 25px;
   height: 25px;
-  border-block-start: 1px solid var(--border-button);
-  border-inline-end: 1px solid var(--border-button);
+  border-block-start: 1px solid var(--border);
+  border-inline-end: 1px solid var(--border);
 }
 
 .decorated-zone::after {
@@ -88,8 +91,8 @@
   left: 10px;
   width: 25px;
   height: 25px;
-  border-block-end: 1px solid var(--border-button);
-  border-inline-start: 1px solid var(--border-button);
+  border-block-end: 1px solid var(--border);
+  border-inline-start: 1px solid var(--border);
 }
 
 .decor {
@@ -98,7 +101,7 @@
   position: absolute;
   top: 10px;
   right: 20px;
-  font-family: var(--font-setting);
+  font-family: var(--font-setting, sans-serif);
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
@@ -148,7 +151,7 @@
 .list-items {
   display: flex;
   flex-direction: column;
-  gap: 10px
+  gap: 10px;
 }
 
 .list-item-title {
@@ -171,6 +174,13 @@
   text-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.advice_title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  color: var(--section-title-color);
+}
+
 .recommendation-title {
   font-weight: 400;
   font-size: 18px;
@@ -191,6 +201,9 @@
 
 .image {
   inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .footer {
@@ -203,28 +216,6 @@
   margin-block-start: 30px;
 }
 
-.footer::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 25px;
-  height: 25px;
-  border-block-start: 1px solid var(--border-button);
-  border-inline-end: 1px solid var(--border-button);
-}
-
-.footer::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  width: 25px;
-  height: 25px;
-  border-block-end: 1px solid var(--border-button);
-  border-inline-start: 1px solid var(--border-button);
-}
-
 .footer-title {
   font-weight: 700;
   font-size: 116px;
@@ -233,18 +224,38 @@
   color: var(--title-color);
 }
 
-@media (width >=768px) {
-  :root {
-    --padding: 20px;
-  }
+.header__theme-menu-button:hover {
+  border: 1px solid var(--border-hover-button);
+  cursor: pointer;
+}
 
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--border);
+  outline: none;
+}
+
+.link:hover {
+  border-bottom: 1px solid var(--text-color);
+  cursor: pointer;
+}
+
+.link:focus {
+  outline: none;
+  border: 1px solid var(--text-color);
+}
+
+.link:focus-visible {
+  border: 1px solid var(--text-color);
+}
+
+@media (width >=768px) {
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     position: relative;
     inset-inline-start: calc(-1* var(--padding));
   }
 
-  .header-text {
+  .header-info {
     inline-size: 50%;
     justify-self: end;
     margin-block-start: 0;
@@ -292,6 +303,10 @@
     grid-column: 1 / 3;
   }
 
+  .recommendations .section-title {
+    grid-row: 1 / span 2;
+  }
+
   .gallery-title {
     grid-area: title;
   }
@@ -326,24 +341,8 @@
       "tape street street";
   }
 
-  .image {
-    block-size: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
   .footer {
     margin-block-start: 40px;
-  }
-
-  .footer::before {
-    top: 20px;
-    right: 20px;
-  }
-
-  .footer::after {
-    bottom: 20px;
-    left: 20px
   }
 
   .footer-title {
@@ -365,5 +364,47 @@
     margin-block-start: 0;
     justify-self: center;
     align-self: start;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-color: url(../images/cover-image-light.png);
+    --subtitle-bg-color: #FF8DCB;
+    --header-button-bg-color: transparent;
+    --title-color: #FFC2E6;
+    --text-color: #353430;
+    --section-title-color: #353430;
+    --subtitle-color: #353430;
+    --button-text-color: #353430;
+    --font-setting: "IBM Plex Mono", sans-serif;
+    --accent-color: #FF8DCB;
+    --border: #353430;
+    --border-hover-button: rgba(50, 49, 45, 0.4);
+  }
+
+  .decor {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: url(../images/cover-image-dark.png);
+    --subtitle-bg-color: #FF0070;
+    --header-button-bg-color: transparent;
+    --title-color: #DB00FF;
+    --text-color: #F1B2CE;
+    --section-title-color: #000028;
+    --subtitle-color: #FF0070;
+    --button-text-color: #FF0070;
+    --font-setting: "IBM Plex Mono", sans-serif;
+    --accent-color: #FF0070;
+    --border: #FF0070;
+    --border-hover-button: rgba(255, 0, 112, 0.4);
+  }
+
+  .decor {
+    display: flex;
   }
 }
