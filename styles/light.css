@@ -9,22 +9,22 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-color: url(../images/cover-image-light.png);
+  --subtitle-bg-color: #FF8DCB;
+  --header-button-bg-color: transparent;
+  --title-color: #FFC2E6;
+  --text-color: #353430;
+  --section-title-color: #353430;
+  --subtitle-color: #353430;
+  --button-text-color: #353430;
+  --font-setting: "IBM Plex Mono", sans-serif;
+  --accent-color: #FF8DCB;
+  --border-button: #353430;
 }
 
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  --bg-color: url(../images/cover-image-light.png);
-    --subtitle-bg-color: #FF8DCB;
-    --header-button-bg-color: transparent;
-    --title-color: #FFC2E6;
-    --text-color: #353430;
-    --section-title-color: #353430;
-    --subtitle-color: #353430;
-    --button-text-color: #353430;
-    --font-setting: "IBM Plex Mono", sans-serif;
-    --accent-color: #FF8DCB;
-    --border-button: #353430;
 }
 
 .theme-light .decor {
@@ -82,10 +82,6 @@
   .link:hover {
     border-bottom: 1px solid rgb(53, 52, 48);
     cursor: pointer;
-  }
-
-  .link:focus {
-    border: 1px solid rgb(53, 52, 48);
   }
 
   .link:focus {

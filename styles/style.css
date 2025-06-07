@@ -277,7 +277,7 @@
   }
 
   .reasons {
-    grid-template-rows: min-content 1fr; 
+    grid-template-rows: min-content 1fr;
   }
 
   .reasons .section-title {
@@ -298,7 +298,7 @@
     grid-area: sunset;
   }
 
-  .ice-cream-image{
+  .ice-cream-image {
     grid-area: ice;
   }
 
@@ -336,7 +336,7 @@
 
   .footer::before {
     top: 20px;
-    right: 20px; 
+    right: 20px;
   }
 
   .footer::after {
