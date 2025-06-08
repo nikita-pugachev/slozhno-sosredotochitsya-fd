@@ -26,3 +26,24 @@
 .theme-dark .decor {
   display: flex;
 }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: url(../images/cover-image-dark.png);
+    --subtitle-bg-color: #FF0070;
+    --header-button-bg-color: transparent;
+    --title-color: #DB00FF;
+    --text-color: #F1B2CE;
+    --section-title-color: #000028;
+    --subtitle-color: #FF0070;
+    --button-text-color: #FF0070;
+    --font-setting: "IBM Plex Mono", sans-serif;
+    --accent-color: #FF0070;
+    --border: #FF0070;
+    --border-hover-button: rgba(255, 0, 112, 0.4);
+  }
+
+  .decor {
+    display: flex;
+  }
+}
